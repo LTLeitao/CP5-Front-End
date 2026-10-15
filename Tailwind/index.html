@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinta & Agulha - Estúdio de Tatuagem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-zinc-200 font-sans">
+
+  <header class="border-b border-zinc-800">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl font-bold text-white">
+        Tinta <span class="text-red-700 font-normal">&</span> Agulha
+      </a>
+
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#processo" class="hover:text-red-600">O Processo</a>
+        <a href="#estilos" class="hover:text-red-600">Estilos</a>
+        <a href="#trabalhos" class="hover:text-red-600">Trabalhos</a>
+        <a href="#contato" class="hover:text-red-600">Contato</a>
+      </nav>
+
+      <button onclick="toggleModal()" class="bg-red-700 text-white text-sm font-medium px-4 py-2 hover:bg-red-800">
+        Agendar sessão
+      </button>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      
+      <div class="md:col-span-7">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold mb-6 text-white">
+          Arte que se carrega na pele por toda a vida.
+        </h1>
+        <p class="text-lg text-zinc-400 mb-8">
+          Desenvolvemos projetos autoriais e personalizados — do primeiro esboço conceitual à aplicação precisa na pele. Cada traço respeita a anatomia e a história de quem o carrega.
+        </p>
+        <a href="#trabalhos" class="inline-block border border-amber-600 text-amber-500 px-5 py-2.5 text-sm font-semibold hover:bg-amber-600 hover:text-black">
+          Ver trabalhos
+        </a>
+      </div>
+
+      <div class="md:col-span-5 space-y-4">
+        <div class="border-t border-zinc-800 pt-3 flex items-center gap-3">
+          <div class="w-8 h-8 bg-red-700 shrink-0"></div>
+          <div>
+            <h3 class="font-semibold text-white">Blackwork & Fine Line</h3>
+            <p class="text-xs text-zinc-400">Traços finos, contraste marcante e pigmentação duradoura.</p>
+          </div>
+        </div>
+
+        <div class="border-t border-zinc-800 pt-3 flex items-center gap-3">
+          <div class="w-8 h-8 bg-zinc-800 border border-zinc-700 shrink-0 flex items-center justify-center text-amber-500 font-bold">✓</div>
+          <div>
+            <h3 class="font-semibold text-white">Biossegurança Rigorosa</h3>
+            <p class="text-xs text-zinc-400">Materiais 100% descartáveis e esterilização de padrão hospitalar.</p>
+          </div>
+        </div>
+
+        <div class="border-t border-zinc-800 pt-3 border-b pb-3 flex items-center gap-3">
+          <div class="w-8 h-8 bg-amber-600 shrink-0"></div>
+          <div>
+            <h3 class="font-semibold text-white">Desenho Exclusivo</h3>
+            <p class="text-xs text-zinc-400">Criado sob medida para cada cliente, sem repetição de flashs.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="processo" class="bg-zinc-800 py-16 border-y border-zinc-700">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-serif text-3xl font-bold mb-2 text-white">O processo, em quatro etapas</h2>
+      <p class="text-zinc-400 mb-8">Cada tatuagem passa pela mesma atenção minuciosa, da consulta inicial à cicatrização final.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="border-l-2 border-red-700 pl-4">
+          <span class="font-serif text-red-700 text-xl font-bold block mb-1">01</span>
+          <h3 class="font-bold text-lg mb-1 text-white">Consulta</h3>
+          <p class="text-sm text-zinc-400">
+            Conversamos sobre a ideia, local do corpo, referências e a mensagem que você deseja expressar.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-red-700 pl-4">
+          <span class="font-serif text-red-700 text-xl font-bold block mb-1">02</span>
+          <h3 class="font-bold text-lg mb-1 text-white">Criação</h3>
+          <p class="text-sm text-zinc-400">
+            O projeto é desenhado do zero, ajustado à anatomia para harmonizar perfeitamente com seu corpo.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-red-700 pl-4">
+          <span class="font-serif text-red-700 text-xl font-bold block mb-1">03</span>
+          <h3 class="font-bold text-lg mb-1 text-white">Aplicação</h3>
+          <p class="text-sm text-zinc-400">
+            Sessão realizada com pigmentos veganos premium em um ambiente calmo, seguro e higienizado.
+          </p>
+        </div>
+
+        <div class="border-l-2 border-red-700 pl-4">
+          <span class="font-serif text-red-700 text-xl font-bold block mb-1">04</span>
+          <h3 class="font-bold text-lg mb-1 text-white">Pós-Atendimento</h3>
+          <p class="text-sm text-zinc-400">
+            Acompanhamento contínuo da cicatrização com orientações detalhadas e produtos específicos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalhos" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-serif text-3xl font-bold mb-8 text-white">Trabalhos recentes</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-zinc-800 border border-zinc-700 h-64 p-6 flex items-end">
+          <span class="text-xs uppercase text-amber-500 font-semibold">
+            PROJETO ANATÔMICO - FECHAMENTO DE BRAÇO
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-zinc-800 border border-zinc-700 h-28 p-3 flex items-end">
+            <span class="text-xs uppercase text-amber-500 font-semibold">
+              FINE LINE BOTÂNICO
+            </span>
+          </div>
+
+          <div class="bg-zinc-800 border border-zinc-700 h-28 p-3 flex items-end">
+            <span class="text-xs uppercase text-amber-500 font-semibold">
+              NEO TRADICIONAL
+            </span>
+          </div>
+
+          <div class="col-span-2 bg-zinc-800 border border-zinc-700 h-32 p-3 flex items-end">
+            <span class="text-xs uppercase text-amber-500 font-semibold">
+              BLACKWORK GEOMÉTRICO
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 border-t border-zinc-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <blockquote class="border-l-2 border-red-700 pl-6 py-2">
+        <p class="font-serif italic text-xl mb-3 text-white">
+          "Trouxe uma ideia confusa de uma memória de infância e o estúdio transformou em uma obra de arte impecável."
+        </p>
+        <footer class="text-sm">
+          <strong class="text-amber-500">Helena Mourão</strong> — <span class="text-zinc-500">cliente desde 2019</span>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <div id="modalAgendamento" class="fixed inset-0 bg-black/80 hidden items-center justify-center p-4">
+    <div class="bg-zinc-800 border border-zinc-700 p-6 rounded max-w-md w-full relative">
+      <button onclick="toggleModal()" class="absolute top-3 right-3 text-zinc-400 hover:text-white">✕</button>
+      <h3 class="font-serif text-xl font-bold text-white mb-4">Agende sua sessão</h3>
+      <form class="space-y-3">
+        <div>
+          <label class="block text-xs uppercase text-amber-500 mb-1">Seu Nome</label>
+          <input type="text" class="w-full bg-zinc-900 border border-zinc-700 p-2 text-sm text-white focus:outline-none" placeholder="Digite seu nome">
+        </div>
+        <div>
+          <label class="block text-xs uppercase text-amber-500 mb-1">Estilo de Tatuagem</label>
+          <select class="w-full bg-zinc-900 border border-zinc-700 p-2 text-sm text-zinc-300 focus:outline-none">
+            <option>Blackwork & Fine Line</option>
+            <option>Neo Tradicional</option>
+            <option>Projeto Exclusivo / Autoral</option>
+          </select>
+        </div>
+        <button type="button" onclick="toggleModal()" class="w-full bg-red-700 text-white text-sm font-medium py-2 hover:bg-red-800 mt-2">
+          Enviar Solicitação
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="contato" class="bg-black py-12 border-t border-zinc-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-serif text-2xl font-bold mb-8 text-white">Visite o estúdio</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h4 class="text-xs text-amber-500 uppercase font-bold mb-1">ENDEREÇO</h4>
+          <p class="text-zinc-400">Rua dos Tatuadores, 214 — Pinheiros, São Paulo</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs text-amber-500 uppercase font-bold mb-1">HORÁRIO</h4>
+          <p class="text-zinc-400">Terça a sábado, 10h às 19h</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs text-amber-500 uppercase font-bold mb-1">CONTATO</h4>
+          <p class="text-zinc-400">contato@tintaeagulha.com.br</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleModal() {
+      const modal = document.getElementById('modalAgendamento');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+  </script>
+</body>
+</html>
